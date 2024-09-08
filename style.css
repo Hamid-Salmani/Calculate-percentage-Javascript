@@ -1,0 +1,96 @@
+body {
+    /* background-color: rgb(0, 181, 63); */
+    padding-left: 200px;
+    margin-left: 200px;
+    background: #44A08D;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #093637, #44A08D);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #093637, #44A08D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+#container {
+    /* background-color: #d5d7d7; */
+    width: 450px;
+    height: 390px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 4px inset;
+    border-radius: 10px;
+}
+
+form {
+    text-align: center;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+input {
+    height: 35px;
+    width: 250px;
+    margin: 4px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: none;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+#calculate {
+    height: 45px;
+    width: 280px;
+    color: rgb(0, 0, 0);
+    margin: 4px;
+    padding-left: 67px;
+    padding-right: 67px;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-family: sans-serif;
+    text-decoration: none;
+    background: linear-gradient(#a8ffba, #f7ffba) repeat-x #fff;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-size: auto;
+    background-size: 200% 100%;
+    background-position-x: 0;
+    background-position-y: 3.5em;
+    transition: background-position-y 0.2s ease-in-out;
+    animation: waveAnimation 4s infinite linear;
+    animation-play-state: running;
+    animation-play-state: paused;
+}
+#calculate:hover{
+    background-position-x: 0;
+    background-position-y: 0;
+    animation-play-state: running;
+    
+}
+@keyframes waveAnimation{
+    from {
+        background-position-x: 0%;
+    }
+    to {
+        background-position-x: 200%;
+    }
+}
+#p {
+    color: white;
+    font-weight: bold;
+    padding-bottom: 20px;
+    font-size: 30px;
+    position: fixed;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+#header {
+    color: white;
+    
+}
+
